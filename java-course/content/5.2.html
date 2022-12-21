@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Java I</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1</summary>
+                                <div onclick="location.href='intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Expressions and Assignment
+                                    Statements</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 More on Expressions</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 The Class String
+                                </div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 2</summary>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Screen Output</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item">2.2 Console Input Using
+                                    Scanner Class</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item"> Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item">3.1 If Statement & Nested
+                                        If</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item">3.2 Switch</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item">3.3 Boolean Expression
+                                    </div>
+                                    <div onclick="location.href='3.4.html'" class="menu-item">3.4 Intro to Loops</div>
+                                    <div onclick="location.href='3.5.html'" class="menu-item">3.5 While & Do-While Loop
+                                    </div>
+                                    <div onclick="location.href='3.6.html'" class="menu-item">3.6 For Loop</div>
+                                    <div onclick="location.href='3.7.html'" class="menu-item">3.7 Nested Loops</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item">4.1 Intro to Arrays</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 5 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 5</summary>
+                                    <div onclick="location.href='5.1.html'" class="menu-item">5.1 Static Methods &
+                                        Static Variables</div>
+                                    <div onclick="location.href='5.2.html'" class="menu-item current-section">5.2 Class Definitions
+                                    </div>
+                                    <div onclick="location.href='5.3.html'" class="menu-item">5.3 Constructors</div>
+                                    <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">5.2 – Class Definitions
+                            </h1>
+                            <p class="body-text">
+                                It can be described as a template that specifies the data and behavior related to the
+                                instantiation
+                                of the class. <br><br>
+
+                                When a class is instantiated, an object (variable) of that class is created and may be
+                                used to access its member variables and methods.
+                                <br><br>
+
+                                The <span>class</span> keyword must be followed by the class name. Inside the class, we
+                                declare methods and variables. <br><br><br>
+                                Class declaration includes the following in the order as it appears: <br><br><br>
+
+                                <span>- Modifiers:</span> A class can be public or has default access. <br><br>
+                                <span>- class keyword:</span> The class keyword is used to create a class. <br><br>
+                                <span>- Class name:</span> The name must begin with an initial letter (capitalized by
+                                convention). <br><br>
+                                <span>- Superclass</span> (if any): The name of the class's parent (superclass), if any,
+                                preceded by the keyword <span>extends</span>. A class can only extend (subclass) one
+                                parent. <br><br>
+
+                                <span>- Interfaces</span> (if any): A comma-separated list of interfaces implemented by
+                                the class, if any, preceded by the keyword <span>implements</span> . <br> A class can implement more than one interface. <br><br>
+
+                                
+                                <span>- Body</span>: The class body surrounded by braces, { }.
+                            </p>
+
+                            <p class="body-text">Syntax:</p>
+                            <code id="codeblock">
+   &lt;access specifier&gt; class class_name
+    {
+    // member variables
+    // class methods
+    }
+                              </code>
+
+                              <br><br>
+                            <button class="next-lesson-button button2-style"
+                                onclick="location.href='5.3.html'">NEXT LESSON</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- -->
+
+</body>
+
+</html>

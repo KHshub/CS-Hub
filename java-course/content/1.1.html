@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Java I Course</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <!-- <div class="sidebar-icon"><a>-</a></div> -->
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 1</summary>
+                                <div onclick="location.href='intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='1.1.html'" class="menu-item current-section">1.1 Expressions and Assignment
+                                    Statements</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 More on Expressions</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 The Class String
+                                </div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 2</summary>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Screen Output</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item">2.2 Console Input Using
+                                    Scanner Class</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item"> Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item">3.1 If Statement & Nested
+                                        If</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item">3.2 Switch</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item">3.3 Boolean Expression
+                                    </div>
+                                    <div onclick="location.href='3.4.html'" class="menu-item">3.4 Intro to Loops</div>
+                                    <div onclick="location.href='3.5.html'" class="menu-item">3.5 While & Do-While Loop
+                                    </div>
+                                    <div onclick="location.href='3.6.html'" class="menu-item">3.6 For Loop</div>
+                                    <div onclick="location.href='3.7.html'" class="menu-item">3.7 Nested Loops</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item">4.1 Intro to Arrays</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 5 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 5</summary>
+                                    <div onclick="location.href='5.1.html'" class="menu-item">5.1 Static Methods &
+                                        Static Variables</div>
+                                    <div onclick="location.href='5.2.html'" class="menu-item">5.2 Class Definitions
+                                    </div>
+                                    <div onclick="location.href='5.3.html'" class="menu-item">5.3 Constructors</div>
+                                    <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">1.1 – Expressions and Assignment Statements</h1>
+                            <p class="body-text">Variables, expressions, and assignments in Java are similar to their
+                                counterparts in most other general purpose languages. We will learn about the details in
+                                this section.
+                            </p>
+                            <h2 class="heading-text">Identifiers</h2>
+                            <p class="body-text">Identifier is the name of a variable or other items (class, method,
+                                object..etc) defined in a program.</p>
+                            <h3 class="heading-text">Java Identifier Naming Rules:</h3>
+                            <ol class="list-text">
+                                <li>must not start with a digit, and all the characters must be letters, digits, or the
+                                    underscore symbol.</li>
+                                <li>can theoretically be of any length</li>
+                                <li>Java is a case-sensitive language that distinguishes between upper- and lowercase
+                                    letters in the spelling of identifiers. This means that <span>(Rate, rate, and
+                                        RATE)</span> are the names of three different variables.</li>
+                            </ol>
+                            <h3 class="heading-text">Keywords & Reserved Words</h3>
+                            <p class="body-text">They are a special kind of identifiers that have a predefined meaning
+                                in Java.</p>
+                            <ul class="list-text">
+                                <li>Cannot be used as names for variables or anything else.</li>
+                                <li>Examples: <span>public, class, void, static</span> </li>
+                            </ul>
+                            <p class="body-text">Some predefined words, like <span>System</span> and
+                                <span>println</span> , are not keywords, and you can redefine them. They are defined in
+                                libraries required by the Java language standard.</p>
+                            <ul class="list-text">
+                                <li>you should avoid redefining them because it can be confusing and dangerous, so just
+                                    treat them as keywords as a safer practice.
+                                </li>
+                            </ul>
+                            <h3 class="heading-text">Naming Conventions</h3>
+                            <img class="img-styled" src="../assets/naming_conventions.png">
+
+                            <h2 class="heading-text">Variables</h2>
+                            <p class="body-text">You must always declare variables before using them.
+                            </p>
+                            <ul class="list-text">
+                                <li>declaring a variable is telling the compiler what data type will be stored in that variable.
+                                </li>
+                                <li>Examples:
+                                    <ul>
+                                        <li><span>int</span>  grade;</li>
+                                        <li><span>float</span>  price, percentage; </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <p class="body-text">Java has basic types which are called Primitive Types:</p>
+                            <img class="img-styled" src="../assets/primitive_types.png">
+                            
+                            <h2 class="heading-text">Assignment Statements</h2>
+                            <p class="body-text">The simplest way to change a variable’s value is by using an <b>assignment statement</b>.
+                                After a variable is declared, you can assign a value to it by using an assignment statement.
+                                </p>
+                                <ul class="list-text">
+                                    <li>The equal sign = is used as the assignment operator.</li>
+                                    <li> variable = expression;</li>
+                                </ul>
+                            <img class="img-styled" src="../assets/assignment_statement.png">
+
+                            <ul class="list-text">
+                                <li>An assignment statement is an expression that evaluates a value,
+                                    which is assigned to the variable on the left side of the assignment operator. </li>
+                                <li> an assignment expression only evaluates a value,
+                                    and does not take into account the variable.</li>
+                            </ul>
+                            <p class="body-text">An expression represents a computation involving values, variables, and operators that, when taking them together, evaluates to a value.
+                            </p> 
+                            <ul class="list-text">
+                                <li>Example:</li>
+                            </ul>
+                            <code id="codeblock">
+    // Assign 1 to variable y  
+    int y = 1;      
+
+    // Assign 1.0 to variable radius
+    double radius = 1.0;
+
+    // Assign the value of the expression to x
+    int x = 5 * (3/2); 
+
+    // Assign the addition of y and 1 to x     
+    x = y + 1;              
+                                                          </code>
+                            
+                            <p class="body-text">The assignment operator is executed from right to left.
+                                Java also has the facility of chain assignment operators, where we can specify a single value for multiple variables. 
+                                </p>
+                            <code id="codeblock">
+    var1 = var2 = 10;
+    //both var1 and var2 have the value of 10
+                                                          </code>
+                            <h3 class="heading-text">Initializing Variables</h3>
+                            <p class="body-text"><span>Initialized variables:</span> the variables that are declared and given a value. <br>
+                                <span>Uniitialized variables:</span> the variables that are declared without a value.
+                            </p>
+                            <code id="codeblock">
+    int var1 = 10;	//initialized
+    int var2;	//uninitialized
+
+    //we can have both in the same declaration
+    int firstName = John, lastName; 	
+                                                          </code>
+                            <h3 class="heading-text">Shorthand Assignment Statements</h3>
+                            <p class="body-text">We can combine the assignment operator <span>(=)</span>  and an arithmetic operator so
+                                that a given variable can have its value changed by adding, subtracting, multiplying, or
+                                dividing by a specified value. </p>
+                            <ul class="list-text">
+                                <li>The general form is: <span>Variable Op = Expression</span></li>
+                                <li>Which is equivalent to: <span>Variable = Variable Op (Expression)</span></li>
+                            </ul>
+                            <p class="body-text"><b>Op:</b>  can be any of +. -. *, / , %</p>
+                            <!--        ADD A PICTURE HERE      -->
+                            <img class="img-styled" src="../assets/operators.png">
+                            <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='1.2.html'" >NEXT LESSON</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- Video changing script -->
+    <script>
+        function newSrc() {
+            var e = document.getElementById("MySelectMenu");
+            var newSrc = e.options[e.selectedIndex].value;
+            document.getElementById("MyFrame").src = newSrc;
+        }
+    </script>
+</body>
+
+</html>
