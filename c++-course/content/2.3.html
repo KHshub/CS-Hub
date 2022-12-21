@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>C++</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to programming</summary>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Introduction Computer Languages</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Software Development Steps</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 Algorithms & Flowcharts</div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 2: Intro to C++</summary>
+                                <div onclick="location.href='Intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Structure of C++</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item">2.2 Data types and Declaration Statements</div>
+                                <div onclick="location.href='2.3.html'" class="menu-item current-section">2.3 Arithmetic expressions</div>
+                                <div onclick="location.href='2.4.html'" class="menu-item ">2.4 Memory allocation and Errors</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Input and Output</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item ">3.1 Output</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item ">3.2 Input</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item ">3.3 Mathematical library & Type Conversions</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Selection and Repetition</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item ">4.1 Selection</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item ">4.2 Repetition</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                             <!-- section 5 -->
+                             <div class="dropdown-menu">
+                            <details>
+                             <summary>Section 5: Functions and Arrays</summary>
+                             <div onclick="location.href='5.1.html'" class="menu-item ">5.1 Functions</div>
+                             <div onclick="location.href='5.2.html'" class="menu-item " >5.2 Arrays </div>
+                             <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                             </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">2.3-Arithmetic expressions</h1> <br>
+                            <h3 class="heading-text">Arithmetic Operations</h3>
+                            <p class="body-text">C++ supports addition, subtraction, multiplication, division, and modulus division.</b></p>
+                                <li>In a single arithmetic expression, various data types may be employed.</li>
+                                <li>Arithmetic operators are binary operators </li> <br><br>
+                                <span>Operators Example: </span> +,-,*,/,%,=,etc.. <br><br>
+                                <span>Operands Example: </span> var1,var2,var3,etc..
+
+                                <ul class="list-text">
+                                    <li><span>Binary operators: </span>Require two operands. </li>
+                                    <li><span>Unary operator: </span>Requires only one operand. </li>
+                                    <li><span>Negation operator (-): </span>Reverses the number's sign.</li>
+                                </ul>
+                                <br>
+                                <h3 class="heading-text">Expression Types</h3>
+                                <li><span>Expression: </span>Any set of operators and operands that can provide a value upon evaluation.</li>
+                                <span>Expression Example: </span> <br> <br>
+                                <code style="display: block;padding: 20px;">
+                                    #include &ltiostream&gt <br>
+                                    using namespace std;<br>
+                                    int main()<br>
+                                    { <br><br>
+                                        //varible to store expression(result) <br> <br>
+
+                                        result = a + b / c <br> <br>
+                                    
+                                    }
+                                </code><br><br>
+                                <li>The expression is given a name based on the data type employed (integer expression,...) if all of the operands are of the same type.</li>
+                                <li><span>Mixed-mode expression: </span>Contains floating-point and integer operands, producing a double-precision value.</li>
+                                <li><span>Integer division: </span>Produces an integer result, discarding all fractional remainders (truncated)</li>
+                                <span>Example: </span>The result is 1.2 but it is integer so it comes back 1.
+                                <li><span>Modulus (remainder) operator: </span>Returns only the remainder.</li>
+                                <br>
+                                <h3 class="heading-text">Operator Precedence & Associativity</h3>
+                                <li>Rules for writing arithmetic expressions: </li>
+                                <ul class="list-text">
+                                    <li>Never place two consecutive<span> (one after another) </span>binary arithmetic operators side by side.</li>
+                                    <li>Use parentheses to form groupings (Contents within parentheses are evaluated first), <span>( a * b )</span> .</li>
+                                    <li>Parentheses may be nested inside of other parentheses (Evaluated from innermost to outermost).</li>
+                                    <li>Use the * operator for multiplication, not parentheses.</li>
+                                </ul>
+                                <li>The precedence of operators is used to evaluate expressions with multiple operators: </li>
+                                <ul class="list-text">
+                                    <li>All negations occur first.</li>
+                                    <li>Then multiplication, division, and modulus, left to right.</li>
+                                    <li>Addition and subtraction are last,  left to right.</li>
+                                </ul>
+                                <li><span>Associativity: </span>The sequence in which operators with similar precedence are assessed.</li>
+                                <br>
+                                <h3 class="heading-text">Assignment Operations</h3>
+                                <span>Structure: </span> variable = Expression <br>
+                                <span>Example: </span> &nbsp count &nbsp&nbsp&nbsp&nbsp = &nbsp var + 1
+                                <br><br>
+                                <span>Rules:</span>
+                                <ul>
+                                    <li><span>operator: </span>Equal (=) sign </li>
+                                    <li>If the same variable is utilized, the new value will take the place of the old one.</li>
+                                    <li>The expression can be any expression that can be evaluated to a value.</li>
+                                    <li>Terminated with a semicolon.</li>
+                                    <li>Multiple assignments in the same expression are possible.</li>
+                                </ul>
+                                <span>Accumulation statement: &nbsp</span> Has accumulating effect, <br><span>Example: </span> sum = sum + new_value
+                                <br>
+                                <h3 class="heading-text">Short cuts to assignment operator : </h3>
+                                <ol class="list-text">
+                                   <li> ( x += 1 ) identical to x= x + 1</li>
+                                   <li> ( x -+ 1 ) identical to x= x - 1</li>  
+                                   <li> ( x *= 1 ) identical to x= x * 1</li> 
+                                   <li> ( x /= 1 ) identical to x= x / 1</li> 
+                                   <li> ( x %= 1 ) identical to x= x % 1</li> <br>
+                                   <span>And many more</span>
+                                </ol>
+                                <span>Counting statement:  &nbsp</span> Adds a fixed value to the variable’s current value, <br><span>Example: </span> count = count + 1
+                                <ul>
+                                    <li>Increment operator (++) : Unary operator, when the variable is increased by one.</li>
+                                    <ul>
+                                        <li><span>Prefix increment operator: </span> appears before the variable <span>( ++i )</span></li>
+                                        <li><span>Postfix increment operator: </span> appears after the variable<span> ( i++ )</span></li>
+                                    </ul>
+                                    <li>Decrement operator (--) : Unary operator ,when the variable is decreased by one.</li>
+                                    <ul>
+                                        <li><span>Prefix decrement operator: </span> appears before the variable <span>( --i )</span></li>
+                                        <li><span>Postfix decrement operator: </span> appears after the variable<span> ( i-- )</span></li>
+                                    </ul>
+                                </ul>
+
+
+                                <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='2.4.html'">NEXT LESSON</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                           <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- Video changing script -->
+    <script>
+        function newSrc() {
+            var e = document.getElementById("MySelectMenu");
+            var newSrc = e.options[e.selectedIndex].value;
+            document.getElementById("MyFrame").src = newSrc;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>C++</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to programming</summary>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Introduction Computer Languages</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Software Development Steps</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 Algorithms & Flowcharts</div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 2: Intro to C++</summary>
+                                <div onclick="location.href='Intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Structure of C++</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item current-section">2.2 Data types and Declaration Statements</div>
+                                <div onclick="location.href='2.3.html'" class="menu-item ">2.3 Arithmetic expressions</div>
+                                <div onclick="location.href='2.4.html'" class="menu-item ">2.4 Memory allocation and Errors</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Input and Output</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item ">3.1 Output</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item ">3.2 Input</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item ">3.3 Mathematical library & Type Conversions</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Selection and Repetition</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item ">4.1 Selection</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item ">4.2 Repetition</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                             <!-- section 5 -->
+                             <div class="dropdown-menu">
+                            <details>
+                             <summary>Section 5: Functions and Arrays</summary>
+                             <div onclick="location.href='5.1.html'" class="menu-item ">5.1 Functions</div>
+                             <div onclick="location.href='5.2.html'" class="menu-item " >5.2 Arrays </div>
+                             <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                             </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">2.2-Data types and Declaration Statements</h1>
+                            <p class="body-text"><span>Data type: </span>A set of values & the operations that can be applied to these values.</b></p>
+                            <ul class="list-text">
+                                <li><span>Two fundamental C++ data groupings:</span></li>
+                                <ul class="list-text">
+                                    <li><span>Class data type (a class): </span>Created by the programmer.</li>
+                                    <li><span>Built-in data type (primitive type): </span>Part of the C++ compiler.</li>
+                                </ul>
+                                <p class="body-text"><span>Literal (constant): </span>An actual value.</b></p>
+                                <p class="body-text"><span>Integer: </span>A whole number, C++ has nine built-in integer data types:</b></p>
+                                <ol class="list-text">
+                                   <li><span>int data type: </span>Whole numbers (integers), optionally with plus (+) or minus (–) sign ,<span> Example: </span>2,-5</li>
+                                   <li><span>char data type: </span>Individual character; any letter, digit, or special character enclosed in single quotes , <span>Example: </span> ‘A’ , '1'</li>
+                                   <li><span>bool data type: </span>Represents Boolean (logical) data <br><span>Restricted to two values: true or false</span></li>
+                                    <li><span>Signed & Unsigned Data Types</span></li>
+                                    <ul>
+                                        <li><span>Signed data type: </span>Allows zero, positive, and negative values</li>
+                                        <li><span>Unsigned data type: </span>Permits only positive and zero values ( provides double the range of its signed counterpart)</li> 
+                                    </ul>
+                                </ol>
+            <br><br>
+                                <img class="img-styled" src="../assets/figure11.png"><br>
+                                <h3 class="heading-text">Variables & Declaration Statements</h3>
+
+                                <span>Variable: </span>Is an <b>identifier</b> for a memory address where data can be held.<br><br>
+                                <li><span>Declaration statement: </span>Specifies the data type and identifier of a variable; sets up the memory location,and <b><span>what you need when using the variable.</span></b></li>
+                                <ul class="list-text">
+                                    <li>A single declaration statement can define several variables of the same data type.</li>
+                                    <li>Variables can be initialized in a declaration.</li>
+                                    <li>Before being utilized, a variable must be declared.</li>
+                                    <h4 class="heading-text">Example : </h4>
+                                    <code style="display: block;padding: 20px;">
+                                        #include &ltiostream&gt <br>
+                                        using namespace std;<br>
+                                        int main()<br>
+                                        { <br>
+                                        //declare statement <br>
+                                        // datatype variable_name ; <br>
+                                        &nbsp&nbsp&nbsp &nbsp int &nbsp var1; <br>
+                                        &nbsp&nbsp&nbsp float  &nbsp var2; <br>
+                                        &nbsp&nbsp&nbsp double &nbsp var3; <br>
+                                        &nbsp&nbsp&nbsp char &nbsp first; <br>
+                                        &nbsp&nbsp&nbsp bool  &nbsp choice; <br>
+                                        }
+                                    </code>
+                                </ul><br><br>
+                                <li><span>Assignment statement ( initialization ): </span>Used to store a value into a variable.</li>
+                                <ul class="list-text">
+                                    <li>The memory address of the variable on the left side is allocated the value of the expression on the right.</li>
+                                    <h4 class="heading-text">Example : </h4>
+                                    <code style="display: block;padding: 20px;">
+                                        #include &ltiostream&gt <br>
+                                        using namespace std;<br>
+                                        int main()<br>
+                                        { <br>
+                                        //declare statement <br>
+                                        // datatype variable_name ; <br>
+                                        &nbsp&nbsp &nbsp int &nbsp var1 = 2; <br>
+                                        &nbsp&nbsp&nbsp float  &nbsp var2 = 2.3; <br>
+                                        &nbsp&nbsp&nbsp double &nbsp var3 = 3.523; <br>
+                                        &nbsp&nbsp&nbsp char &nbsp first = 'a'; <br>
+                                        &nbsp&nbsp&nbsp bool  &nbsp choice = true; <br>
+                                            <br>
+                                            //you can do it like this <br>
+                                            &nbsp&nbsp&nbsp&nbsp int  var4; <br>
+                                            &nbsp&nbsp&nbsp&nbsp var4 = -2; <br>  
+                                            <br><br>
+                                            //To print the variable <br><br>
+
+                                           //    &nbsp  variable  &nbsp end_line <br>
+                                            cout<<  &nbsp choice   <<  &nbsp endl ;
+
+                                            <br><br>
+                                            //you can do it like this also<br>
+                                            cout << var1 << endl << var4 << endl ; <br><br>
+
+                                        }
+                                    </code>
+                                    <br><br>
+                                    <code style="display: block;padding: 20px;">
+                                        #include &ltiostream&gt <br>
+                                        using namespace std;<br>
+                                        int main()<br>
+                                        { <br>
+                                            1 <br>
+                                            2 <br>
+                                            -2 <br>
+                                        }
+                                    </code>
+                                </ul>
+                        </ul>
+
+
+
+
+                            <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='2.3.html'">NEXT LESSON</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- Video changing script -->
+    <script>
+        function newSrc() {
+            var e = document.getElementById("MySelectMenu");
+            var newSrc = e.options[e.selectedIndex].value;
+            document.getElementById("MyFrame").src = newSrc;
+        }
+    </script>
+</body>
+
+</html>

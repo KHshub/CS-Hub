@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>C++</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to programming</summary>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Introduction Computer Languages</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Software Development Steps</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 Algorithms & Flowcharts</div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 2: Intro to C++</summary>
+                                <div onclick="location.href='Intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Structure of C++</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item">2.2 Data types and Declaration Statements</div>
+                                <div onclick="location.href='2.3.html'" class="menu-item">2.3 Arithmetic expressions</div>
+                                <div onclick="location.href='2.4.html'" class="menu-item">2.4 Memory allocation and Errors</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Input and Output</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item">3.1 Output</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item">3.2 Input</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item">3.3 Mathematical library & Type Conversions</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Selection and Repetition</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item">4.1 Selection</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item">4.2 Repetition</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                             <!-- section 5 -->
+                             <div class="dropdown-menu">
+                            <details open>
+                             <summary>Section 5: Functions and Arrays</summary>
+                             <div onclick="location.href='5.1.html'" class="menu-item current-section">5.1 Functions</div>
+                             <div onclick="location.href='5.2.html'" class="menu-item " >5.2 Arrays </div>
+                             <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                             </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">5.1-Functions</h1> <br>
+                            
+                            <ul class="list-text"><h3 class="heading-text"> Interaction with a function includes: </h3>
+                                <li>Properly calling a function and passing data to it.</li>
+                                <li>Returning values from a function after it has finished running.</li>
+                            </ul>
+                                <ul class="list-text">
+                                    <li> A function is called by giving the function’s name & passing arguments in the parentheses following the 
+                                        function name </li>
+                                        <br> <br>
+                                        <li><span>Function prototype :</span> declaration statement for a function is</li>
+                                    </ul>
+                                        <ul class="list-text">
+                                            <li> It can be placed with the variable declaration statements above the calling function name or in a separate 
+                                                header file </li>
+                                              
+                                              <li>A function prototype can be used to declare functions to all calling functions.</li>
+                                              <br> <br>
+                                              <li><span>calling function: </span></li>
+                                                <ol class="list-text">
+                                                    <li>kind of value that will be explicitly returned, if any</li>
+                                                    <li>Data type & order of the values the calling function should transmit to the called function </li>
+                                                </ol>
+                                        </ul>
+                                        <ul class="list-text">
+                                <li> <span> Requirements when calling a function include: </span> </li>
+                                <ol class="list-text">
+                                    <li> Using the name of the function</li>
+                                    <li> Enclosing any data passed to the function in the parentheses following the function name, using the same 
+                                        order & type declared in the function prototype </li>
+                                </ol> <br>
+                                <li><span>Argument :</span> items enclosed in the parentheses of the called function </li>
+                                <span>Arguments parameters indicated by the function header must match those passed to a function when it is called.</span>
+                                    
+                            </ul> <br> <br>
+                            <h3 class="list-text">How a function looks like</h3>
+                            <img class="img-styled" src="../assets/figure16.png"><br><br>
+
+                            <ul class="list-text"> <br><br>
+                                <h3 class="list-text">Returning a single value</h3>
+                                <li><span> Function receiving an argument passed by value : </span> </li>
+                                <ul class="list-text">
+                                    <li>Cannot accidentally change the value of the argument's variable.</li>
+                                    <li>Can process the values sent to it in any fashion & return one, & only one, “legitimate” value directly to 
+                                        the calling function </li>
+                                </ul> <br> <br>
+                                <h3 class="list-text">Pass by value Vs Pass by reference </h3>
+                                <li> <span>Pass by value: </span>Signifies that you are storing a copy of the parameter's actual contents in memory, not just the parameter's actual value, which is given in. </li>
+                                    <li> <li>Pass by reference:</li> The address of the real argument is copied and stored.</li>
+                                   <br> <br>
+                                    <h3 class="list-text">Variable scope </h3>
+                                    <li><span>Local variables:</span> Variables that are created in a function but are typically only accessible to the function.</li>
+                                    <li> <span>Scope:</span> Program section where the identifier is "known" or valid.</li>
+                                    <li><span> <span>A variable with local scope</span> is one with storage locations set aside for it by a declaration statement inside 
+                                        the function that declared them</span></li>
+                                        <li> <span>Storage is generated for a variable with global scope by a declaration statement outside of any function.</li>
+                            </ul>
+                            
+
+                            <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='5.2.html'">NEXT LESSON</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- Video changing script -->
+    <script>
+        function newSrc() {
+            var e = document.getElementById("MySelectMenu");
+            var newSrc = e.options[e.selectedIndex].value;
+            document.getElementById("MyFrame").src = newSrc;
+        }
+    </script>
+</body>
+
+</html>

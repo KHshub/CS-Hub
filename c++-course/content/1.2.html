@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>C++</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 1: Intro to programming</summary>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Introduction Computer Languages</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item current-section">1.2 Software Development Steps</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item ">1.3 Algorithms & Flowcharts</div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 2: Intro to C++</summary>
+                                <div onclick="location.href='Intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='2.1.html'" class="menu-item ">2.1 Structure of C++</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item ">2.2 Data types and Declaration Statements</div>
+                                <div onclick="location.href='2.3.html'" class="menu-item ">2.3 Arithmetic expressions</div>
+                                <div onclick="location.href='2.4.html'" class="menu-item ">2.4 Memory allocation and Errors</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Input and Output</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item ">3.1 Output</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item ">3.2 Input</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item ">3.3 Mathematical library & Type Conversions</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Selection and Repetition</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item ">4.1 Selection</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item ">4.2 Repetition</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                             <!-- section 5 -->
+                             <div class="dropdown-menu">
+                            <details>
+                             <summary>Section 5: Functions and Arrays</summary>
+                             <div onclick="location.href='5.1.html'" class="menu-item ">5.1 Functions</div>
+                             <div onclick="location.href='5.2.html'" class="menu-item " >5.2 Arrays </div>
+                             <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                             </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+
+                            <h1 class="heading-text">1.2-Software Development Steps</h1>
+                            <br>
+                            <h3 class="heading-text">Definitions:</h3>
+                            <br>
+                                <p class="body-text"><span>Software development procedure: </span>Help developers understand problem to be solved and create an effective , appropriate software solution.</p>
+                                <p class="body-text"><span>Software engineering: </span>Creates programs and systems that are understandable, effective, dependable, and maintainable - Uses software development methodology to accomplish its goals.</p><br>
+
+                                <img class="img-styled" src="../assets/figure5.png"><br>
+
+                                <h3 class="heading-text">First you need?</h3>
+
+                                <p class="body-text"><span>Program requirement: </span>Request for a program or a statement of a problem.</p><br>
+
+                                <h4 class="heading-text"><span>Then you start with Development and Design <u style="color:#2563EB">Phase One</u></span></h4>
+
+                                <h3 class="heading-text">Phase one consists of</h3>
+
+                                <ul class="list-text">
+                                    
+                                <li>Analysis</li>
+                                <ol class="list-text">
+                                    <li>Determine and comprehend the output items the program needs to deliver.</li>
+                                    <li>Determine the input items.</li>
+                                    <li>Both components are referred to as the input/output (I/O) problems.</li>
+                                </ol><br>
+
+                                <li>Design</li>
+                                    <ol class="list-text">
+                                      <li>Select the exact set of steps, "algorithm,” or a “flowchart” to solve the problem.</li>
+                                      <li>Refine the algorithm , Start with the initial solution in the analysis step until you have an acceptable and complete solution.</li>
+                                      <li>Check the solution.</li>
+                                     </ol></li><br>
+
+                                     <li>Coding</li>
+                                     Which means translating the design into a C++ program or any language
+                                     <span>Statements Types</span>
+                                     <ul class="list-text">
+                                        <li><span>Sequence: </span>Establishes the sequence in which instructions are carried out.</li>
+                                        <li><span>Selection: </span>Enables the choice of a different procedure depending on a condition.</li>
+                                        <li><span>Iteration (looping): </span>Allows the same operation to be repeated based on some condition.</li>
+                                        <li><span>Invocation: </span>Involves calling a series of statements as necessary.</li>
+                                    </ul><br>
+
+
+                                     <li>Testing</li>
+                                     How to check that something is correct and that the requirements are met
+                                     <p class="body-text"><span>“ Takes The Most Effort ”</span></p>
+                                     <p class="body-text"><span>Bug: </span>A program error.</p>
+                                    </ul>
+
+                                    <p class="body-text"><span>Debugging: </span>The procedure for identifying a problem, fixing it, and then confirming the fix.</p>
+
+                                    <ul class="list-text">
+                                        <h4 class="heading-text"><span>Documentation <u style="color:#2563EB">Phase Two</u></span> Main documents for every problem solution: </h4>
+                                        <li>Program description</li>
+                                        <li>Algorithm development and changes</li>
+                                        <li>Well-commented program listing</li>
+                                        <li>Sample test runs</li>
+                                        <li>Users' manual</li>
+                                    </ul>
+
+                                    <ul class="list-text">
+                                        <h4 class="heading-text"><span>Maintenance <u style="color:#2563EB">Phase Three</u></span> Ongoing correction of newly discovered bugs,Revisions to meet changing user needs, Addition of new features.</h4>
+                                        <li>Longest phase</li>
+                                        <li>Maybe the primary source of revenue</li>
+                                        <li>Good documentation vital for effective maintenance</li>
+                                    </ul>
+                                    <p class="body-text"><span>Backup: </span>Process of routinely making copies of computer code and documenting it.</p>
+                                    <p class="body-text"><span>Backup copies: </span>insurance against loss or damage ; better to use off-site storage for additional protection.</p>
+                            <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='1.3.html'">NEXT LESSON</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                                       <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+</body>
+
+</html>

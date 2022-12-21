@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>C++</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to programming</summary>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Introduction Computer Languages</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Software Development Steps</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 Algorithms & Flowcharts</div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 2: Intro to C++</summary>
+                                <div onclick="location.href='Intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Structure of C++</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item">2.2 Data types and Declaration Statements</div>
+                                <div onclick="location.href='2.3.html'" class="menu-item">2.3 Arithmetic expressions</div>
+                                <div onclick="location.href='2.4.html'" class="menu-item current-section">2.4 Memory allocation and Errors</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Input and Output</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item ">3.1 Output</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item ">3.2 Input</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item ">3.3 Mathematical library & Type Conversions</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Selection and Repetition</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item ">4.1 Selection</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item ">4.2 Repetition</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                             <!-- section 5 -->
+                             <div class="dropdown-menu">
+                            <details>
+                             <summary>Section 5: Functions and Arrays</summary>
+                             <div onclick="location.href='5.1.html'" class="menu-item ">5.1 Functions</div>
+                             <div onclick="location.href='5.2.html'" class="menu-item " >5.2 Arrays </div>
+                             <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                             </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">2.4-Memory allocation and Errors</h1>
+
+                            <ul class="list-text">
+                                <li><p class="body-text"><span>Definition statement: </span>A declaration that defines how much memory is needed for data storage,<b><span>and what you need when you execute a program.</span></b></p></li>
+                                <li>Three items associated with each variable:</li>
+                                <ul class="list-text">
+                                    <li>Data type</li>
+                                    <li>Actual value stored in the variable <span>(its contents)</span></li>
+                                    <li><span>The memory address</span> of the variable</li>
+                                </ul>
+                            </ul>
+                                <img class="img-styled" src="../assets/figure12.png"><br>
+                                <ul>
+                                <li>Address operator <span>(&)</span> provides the variable’s address Memory Allocation</li>
+                                <br>
+                                <code style="display: block;padding: 20px;">
+                                    #include &ltiostream&gt <br>
+                                    using namespace std;<br>
+                                    int main()<br>
+                                    {<br>
+                                        int age = 50;<br>
+                                        <br>
+                                        cout << age << endl; //shows value that is stored in age<br>
+                                        cout << &age << endl; //shows address of the memory location<br>
+                                        <br>
+                                        return 0;<br>
+                                    }
+                                </code><br>
+                                <h3><span>Output</span></h3>
+                                <code style="display: block;padding: 20px;">
+                                    50 //age output <br>
+                                    0x23fefc //age address memory location 
+                                </code><br>
+                                <li>When a variable is declared, memory is allocated according to the data type.</li>
+                                <h5><span>You can declare a varible Multiple times put you can define it once</span></h5>
+                               
+
+
+
+                                <h3 class="heading-text">Determining Storage Size</h3>
+                                <p class="body-text"><span>Floating-Point Types Floating-point number (real number):</span>Zero or any positive or negative number containing a decimal point.</p>
+                                <li><span>Three floating-point data types in C++: </span>float (single precision) , double (double precision) , long double</li>
+                                <li><span>float literal: </span>Append an f or F to the number</li>
+                                <li><span>long double literal: </span>Append an l or L to the number</li><br>
+                                <br>
+                                <code style="display: block;padding: 20px;">
+                                    #include &ltiostream&gt <br>
+                                    using namespace std;<br>
+                                    int main()<br>
+                                    {<br>
+                                        cout << 0.3f<< endl; // float literal <br>
+                                        cout << 1/3.f<< endl; // float literal <br>
+                                        cout << endl; // break line<br><br>
+                                        cout << 0.3 << endl; // double literal <br>
+                                        cout << endl; // break line<br><br>
+                                        cout << 0.3L << endl; // long double literal <br>
+                                        cout << 1/3.L << endl; // long double literal <br>
+                                        cout << endl; // break line<br><br>
+                                        cout << 1/3 << endl; // integer <br>
+                                    }
+                                </code><br>
+                                <h3><span>Output</span></h3>
+                                <code style="display: block;padding: 20px;">
+                                    0.3<br>
+                                    0.333333<br>
+                                    <br>
+                                    0.3<br>
+                                    <br>
+                                    0.3<br>
+                                    0.333333<br>
+                                    <br>
+                                    0<br>
+                                </code><br>
+                                <li>A unique feature of C++ is that you can see where and how values are stored </li>
+                                <li>sizeof() operator provides number of bytes used to store values of the data type named in the parenthesis</li>
+                                <ul class="list-text"><li>Values returned by sizeof() are compiler dependent</li>
+                                </ul>
+                                <li>No special characters are allowed </li>
+                            </ul>
+                            <br>
+                            <code style="display: block;padding: 20px;">
+                                #include &ltiostream&gt <br>
+                                using namespace std;<br>
+                                int main()<br>
+                                {<br>
+                                    int a; <br>
+                                    float b; <br>
+                                    double c; <br>
+                                    char d;<br>
+                                    int e = 10;<br>
+                                    cout << "sizeof(int): " << sizeof(a) << endl;<br>
+                                    cout << "sizeof(float): " << sizeof(b) << endl;<br>
+                                    cout << "sizeof(double): " << sizeof(c) << endl;<br>
+                                    cout << "sizeof(char): " << sizeof(d) << endl;<br>
+                                    <br>
+                                    cout << sizeof(e) << endl; //number of bytes not the value<br>
+                                }
+                            </code><br>
+                            <h3><span>Output</span></h3>
+                            <code style="display: block;padding: 20px;">
+                                sizeof(int): 4
+                                sizeof(float): 4
+                                sizeof(double): 8
+                                sizeof(char): 1
+                                4
+
+                            </code><br>
+                            <h3 class="heading-text">Common Programming Errors</h3>
+
+                                    
+                            <ul class="list-text">
+                                <li>Omitting the parentheses after <span>main()</span></li>
+                                <li>Omitting or incorrectly typing the opening brace <span>{ or the closing brace }</span> that signifies the start and end of a function body.</li>
+                                <li><span>Misspelling</span> the name of an <span>object or function</span>.</li>
+                                <li>Forgetting to enclose a string sent to cout with quotation marks.</li>
+                                <li><span>Omitting a semicolon</span> at end of statement.</li>
+                                <li><span>Adding a semicolon</span> at end of #include statement.</li>
+                                <li><span>Missing \n</span> to indicate new line.</li>
+                                <li>Substituting letter <span>O for zero</span> and vice versa.</li>
+                                <li>Failing to declare all variables.</li>
+                                <li><span>Storing an incorrect data</span> type into a variable.</li>
+                                <li>Attempting to <span>use a variable with no value</span>.</li>
+                                <li><span>Dividing</span> integer values <span>incorrectly</span>.</li>
+                                <li>Mixing data types in the same expression.</li> 
+                            </ul>
+
+                            <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='sec2-quiz.html'">Quiz</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                           <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- Video changing script -->
+    <script>
+        function newSrc() {
+            var e = document.getElementById("MySelectMenu");
+            var newSrc = e.options[e.selectedIndex].value;
+            document.getElementById("MyFrame").src = newSrc;
+        }
+    </script>
+</body>
+
+</html>

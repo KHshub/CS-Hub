@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>C++</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to programming</summary>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 Introduction Computer Languages</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Software Development Steps</div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 Algorithms & Flowcharts</div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 2: Intro to C++</summary>
+                                <div onclick="location.href='Intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='2.1.html'" class="menu-item current-section">2.1 Structure of C++</div>
+                                <div onclick="location.href='2.2.html'" class="menu-item ">2.2 Data types and Declaration Statements</div>
+                                <div onclick="location.href='2.3.html'" class="menu-item ">2.3 Arithmetic expressions</div>
+                                <div onclick="location.href='2.4.html'" class="menu-item ">2.4 Memory allocation and Errors</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Input and Output</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item ">3.1 Output</div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item ">3.2 Input</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item ">3.3 Mathematical library & Type Conversions</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Selection and Repetition</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item ">4.1 Selection</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item ">4.2 Repetition</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                             <!-- section 5 -->
+                             <div class="dropdown-menu">
+                            <details>
+                             <summary>Section 5: Functions and Arrays</summary>
+                             <div onclick="location.href='5.1.html'" class="menu-item ">5.1 Functions</div>
+                             <div onclick="location.href='5.2.html'" class="menu-item " >5.2 Arrays </div>
+                             <div onclick="location.href='sec5-quiz.html'" class="menu-item"> Quiz</div>
+                             </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">2.1-Structure of C++</h1>
+                            <br>
+                                <p class="body-text"><span>Modular program:</span> An application made up of connected sections (or modules) that are organized logically and understandably.<b class="body-text"><br><span>Advantages: </span>Easy to develop, correct,and modify.</b></p><br>
+
+                                <ol class="list-text"><b><span>Modules in C++</span>can be classes or functions</b><br>
+                                    <li><span>Function(Method): </span>Accepts an input, processes the input, & produces an output.</li><br>
+                                    <ul class="list-text">
+                                        <li>The processing of a function is encapsulated and concealed within the function.</li><br>
+                                        <li><span>Rules of </span>Function Names</li>
+                                        <ul class="list-text">
+                                            <li>Require a set of parentheses at the end <span>()</span></li>
+                                            <li>Can use mixed upper and lower case <span>Z or z</span></li>
+                                            <li>Should be meaningful, or be a mnemonic <span>(you can remember it)</span></li>
+                                            <h4><span>Examples:</span> cricle_Area() , _factorial()</h4>
+                                        </ul>
+
+                                        <h4><span>Function header line: </span>beginning of a function, it includes:</h4>
+                                        <li>The kind of information that is <b style="color:#4B0082;">returned</b> by the function (if any)</li>
+                                        <li>The <b style="color:#66CDAA;">name of the function</b></li>
+                                        <li><b style="color:#FFA500;">The type of data that must be passed </b>into the function when it is invoked (if any)</li>
+
+                                        <h4>Example: <b style="color:#4B0082;"> float </b><b style="color:#66CDAA;"> AreaTriangle </b>(<b style="color:#FFA500;">float base,float height</b>)</h4>
+                                    </ul>
+
+                                    <p class="body-text"><span>Arguments: </span>The data passed into a function.<b><span>The argument is</span> float base,float height</b></p>
+
+                                    <p class="body-text"><span>Function body: </span>The braced statements within a function <span>{ }</span> .</p>
+                                
+                                    <p class="body-text">float AreaTriangle(float base,float height){<span>this is the function body;</span>}</p> 
+                                
+                                    <b>Any statement inside the body must <span>end / terminated</span> with semicolon <span>;</span></b>
+
+                                    <h3 class="heading-text">The main() function</h3>
+                                    <b>Each C++ program has at least one function, the <span>main()</span> function or the <span>driver function</span></b><br>
+                                    <b>All other functions are invoked from <span>main()</span></b>
+
+                                    <p class="body-text"><span>return: </span>A term that instructs the function to return the proper value.</p>
+
+                                    <b> The statement <span>return 0; </span>in the main() function causes the program to <span>end </span></b>
+
+                                    <li><span>Class: </span>Includes both data as well as functions for manipulating the data.</li>
+
+                                    <p class="body-text"><span>Preprocessor command: </span>Starts with a # causes action before the source code is compiled into machine code. <span>(Executed before compilation and runtime)</span></p>
+
+                                    <p class="body-text"><span>Header files: </span>Files included at the head (top) of a C++ program.</p>
+
+                                    <p class="body-text"><span><code>#include &lt;file name&gt;</code> : </span> Causes the named file to be inserted into the source code.</p>
+
+                                    <p class="body-text"><span>Using namespace: </span>Indicates where the header file is located.</p>
+                                    <b><span>Namespaces qualify a name</span></b><br><br>
+
+                                    <img class="img-styled" src="../assets/figure9.png"><br>
+
+                                    <p class="body-text"><span>cout object: </span>A data output object that transmits information to a common output display device.</p>
+                                    <p class="body-text"><span>Identifier: </span>A name given to an element of the language, such as a variable, constant, class or function.</p>
+
+                                    <ul class="list-text"><li> C++ is a case-sensitive language which means <span> int a doesn't mean int A</span></li>
+                                        <ul class="list-text">
+                                            <b><span>Rules for forming identifier names: </span></b>
+                                            <li>The first character must be a letter <span>A / a</span> or underscore<span> _</span></li>
+                                            <li><span>Only letters, numbers, or underscores </span>are permitted after the first character (no blanks allowed)</li>
+                                            <li><span>The maximum </span>length of an identifier = 1024 characters </li>
+                                            <li><span>Keywords cannot be used as identifiers.</span></li>
+                                        </ul>
+                                        <h4><span>Valid C++ Identifier : </span> addNums , degToRad , findMax , density , slope.</h4>
+                                    </ul>
+                                    <p class="body-text"><span>Keyword(reserved): </span>A reserved name that represents a built-in object or function of the language.</p>
+                                </ol><br><br>
+                                
+                                <img class="img-styled" src="../assets/figure10.png"><br><br>
+
+                                <p class="body-text"><span>String: </span>Any grouping of letters, numbers, and special characters encapsulated in<span> "double quotes" </span>.</p>
+
+                                <p class="body-text"><span>Delimiter: </span>A symbol that marks the beginning and end of a string; not part of the string .</p>
+
+                                <p class="body-text"><span>Escape sequence: </span>One or more characters preceded by a backslash<b><span> \ </span>(like \n) </b> ,(\) Tells the compiler to treat the following characters as special instruction codes.</p>
+                                <code style="display: block;padding: 20px;">
+                                    #include &ltiostream&gt <br>
+                                    using namespace std;<br>
+                                    int main()<br>
+                                    {<br>
+                                        cout<<"Hello World \n"; <br>
+                                        cout<<"This is a new line";<br>
+                                        <br>
+                                        return 0; //exit code <br>
+                                    }
+                                </code><br>
+                                <span>cout</span> AKA (c)haracter (out)put <br> 
+                                <span> "Hello World" and "Test"</span> are strings <br> 
+                                <span> ; </span> is the end of a command <br>
+                                <span>\n</span> means go to the next line<br>
+                                <h3><span>Output</span></h3>
+                                <code style="display: block;padding: 20px;">
+                                    Hello World <br>
+                                    This is a new line 
+
+                                
+                                </code>
+                                <br>
+                                <p class="body-text"><span>Comments: </span>Explanatory remarks in the source code added by the programmer.</p>
+                                <p class="body-text"><span>Line comment: </span> Begins with <b>//</b> and continues to the end of the line </p>
+
+                                <p class="body-text"><span>Block comments: </span>comments that span across two or more lines , <span>Begin with /* and end with */</span></p>
+                                <br><br>
+                                <code style="display: block;padding: 20px;">
+                                    #include &ltiostream&gt <br>
+                                    using namespace std;<br>
+                                    int main()<br>
+                                    {<br>
+                                    //this is line comment it will not display in the output <br>
+                                    <br>
+                                    /* <br>
+                                    this is block comment <br>
+                                    it will not display <br>
+                                    in the output <br>
+                                    takes multiple lines<br>
+                                    */  end fo the block comment<br>
+                                    }
+                                </code><br>
+
+
+                            <br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='2.2.html'">NEXT LESSON</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+
+    <!-- Video changing script -->
+    <script>
+        function newSrc() {
+            var e = document.getElementById("MySelectMenu");
+            var newSrc = e.options[e.selectedIndex].value;
+            document.getElementById("MyFrame").src = newSrc;
+        }
+    </script>
+</body>
+
+</html>
