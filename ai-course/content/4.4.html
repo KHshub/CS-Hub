@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Intro to AI</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to AI</summary>
+                                <div onclick="location.href='intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 What is AI?</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Approaches of AI
+                                </div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 The Foundations of
+                                    AI
+                                </div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 2: Intelligent Agents</summary>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Agents &
+                                    Environments
+                                </div>
+                                <div onclick="location.href='2.2.html'" class="menu-item">2.2 Types of Agents &
+                                    Environments</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Problem Solving Using Search</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item">3.1 Problem
+                                        solving agents
+                                    </div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item">3.2 Searching for
+                                        solutions</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item">3.3 Types of
+                                        search
+                                        strategies</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details open>
+                                    <summary>Section 4: Logic & Reasoning</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item">4.1 What are
+                                        knowledge-based agents?</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item">4.2 Logic</div>
+                                    <div onclick="location.href='4.3.html'" class="menu-item">4.3 Propositional
+                                        logic
+                                    </div>
+                                    <div onclick="location.href='4.4.html'" class="menu-item current-section">4.4
+                                        Inference Engine</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">4.4 - Inference Engine</h1>
+                            <br>
+
+                            <p class="body-text"><span>Inference Engine: </span> A set of procedures that use the representation
+                                language to infer new facts from known ones. or
+                                respond to various KB questions.</p>
+                            <br>
+
+                            <h3>Examples of Approaches: </h3>
+
+                            <p class="body-text"><b>1.</b> <span>Model Checking</span></p>
+                            <p class="body-text">Model checking is a method to determine entailment. it explicitly implements the concept of entailment.</p>
+                            <ul class="list-text">
+                                <li>The algorithm is sound.</li>
+                                <li>Complete because it works for any KB, α, and terminates (there are only a finite amount of models to
+                                    examine).</li>
+                                <li>Time complexity of the algorithm is O(2^n).</li>
+                                <li>The space complexity is only O(n) because the enumeration is depth-first.</li>
+                                <li>Not efficient</li>
+                            </ul>
+                            <br>
+
+                            <p class="body-text"><b>2.</b> <span>Propositional Theorem Proving (Applying logic)</span></p>
+                            <p class="body-text">Propositonal Theorem Proving applies rules of inference directly to the sentences in the KB to construct a proof without
+                                consulting models. it is a much more efficient method of determining entailment than model checking.</p>
+                            <blockquote>
+                                Two sentences α & β are logically equivalent if they are true in the same set of models, (α ≡ β )
+                                <ul class="list-text">
+                                    <li>e.g., P ∧ Q & Q ∧ P are logically equivalent.</li>
+                                </ul>
+                                <br>
+                                
+                                If a statement is true in all models, it is valid (a tautology).
+                                <ul class="list-text">
+                                    <li>e.g. True, A ∨ ¬A, A => A, (A ∧ (A => B)) => B</li>
+                                </ul>
+                            </blockquote>
+                            <br>
+
+                            <p class="body-text">Validity is connected to inference via the Deduction Theorem: KB ╞ α if & only if (KB ∧ α) is valid.</p>
+                            <ul class="list-text">
+                                <li>A sentence is satisfiable if it is true in some model: e.g., A ∨ B</li>
+                                <li>A sentence is unsatisfiable if it is false in all models: e.g., A ∧ ¬A</li>
+                            </ul>
+                            <br>
+
+                            <p class="body-text">The following pairs of sentences are equivalent and one can be replaced
+                                by the other:</p>
+                            <ul class="list-text">
+                                <li><span>Commutativity:</span></li>
+                                <ul class="list-text">
+                                    <li>P ∧ Q = Q ∧ P -> Commutativity of ∧.</li>
+                                    <li>(P ∨ Q) ∨ R = P ∨ (Q ∨ R) -> Commutativity of ∨.</li>
+                                </ul>
+                                <br>
+                                <li ><span>Associativity:</span></li>
+                                <ul class="list-text">
+                                    <li>(P ∧ Q) ∧ R= P ∧ (Q ∧ R) -> Associativity of ∧.</li>
+                                    <li>(P ∨ Q) ∨ R= P ∨ (Q ∨ R) -> Associativity of ∨.</li>
+                                </ul>
+                                <br>
+                                <li><span>Identity element:</span></li>
+                                <ul class="list-text">
+                                    <li>P ∧ True = P</li>
+                                    <li>P ∧ True = P</li>
+                                </ul>
+                                <br>
+                                <li><span>Distributive:</span></li>
+                                <ul class="list-text">
+                                    <li>P ∧ (Q ∨ R) = (P ∧ Q) ∨ (P ∧ R) -> Distributive of ∧ over ∨.</li>
+                                    <li>P ∨ (Q ∧ R) = (P ∨ Q) ∧ (P ∨ R) -> Distributive of ∨ over ∧.</li>
+                                </ul>
+                                <br>
+                                <li><span>DE Morgan's Law:</span></li>
+                                <ul class="list-text">
+                                    <li>¬ (P ∧ Q) = (¬P) ∨ (¬Q)</li>
+                                    <li>¬ (P ∨ Q) = (¬ P) ∧ (¬Q)</li>
+                                </ul>
+                                <br>
+                                <li><span>Double-negation elimination:</span></li>
+                                <ul class="list-text">
+                                    <li>¬ (¬P) = P</li>
+                                </ul>                   
+                            </ul>
+                            <br>
+
+                            <img src="../assets/modus.PNG">
+                            <br><br>
+
+                            <p><b>3.</b> <span>Searching</span></p>
+                            <p class="body-text">Searching proofs can be done instead of listing models, and it is more effective because it ignores pointless sentences.</p>
+                            <blockquote>
+                                Sound ? yes , Complete ? yes , but if the available inference rules are inadequate, then the goal is
+                                not
+                                reachable.
+                            </blockquote>
+                            <br>
+
+                            <p><b>4.</b> <span>Resolution</span></p>
+                            <p class="body-text">Resolution is a single inference rule that gives a complete inference algorithm when coupled with any complete search algorithm.</p>
+                            <ul class="list-text">
+                                <li>The resolution rule applies only to clauses (disjunctions of literals).</li>
+                                <li>Does it mean it applies to KBs & queries consisting of clauses? Every sentence of propositional logic is logically equivalent to a conjunction of clauses.</li>
+                                <li>A sentence expressed as a conjunction of clauses is said to be in conjunctive normal form or CNF.</li>
+                            </ul>
+
+                            <br><br>
+                            <button class="next-lesson-button button2-style"
+                                onclick="location.href='sec4-quiz.html'">NEXT SECTION</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+</body>
+
+</html>

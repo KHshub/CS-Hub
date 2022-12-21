@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../css/layout-style.css">
+    <link rel="stylesheet" href="../../../../css/inside-course-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>Intro to AI</title>
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="container">
+        <!--Header-->
+        <header>
+            <h1 class="logo-top">CS Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="../../../index.html" class="currentPage navitems">home</a></li>
+                    <li><a href="../../../about-us.html" class="aboutPage navitems">about</a></li>
+                     
+                    <li><a href="../../../courses.html" class="coursesPage navitems">courses</a></li>
+                     
+            </nav>
+        </header>
+
+        <!-- Content Section -->
+        <div class="content-container">
+            <!-- Dropdown content -->
+            <div class="col1">
+                <div class="dropdown-box">
+                    <h1>Content</h1>
+                    <!-- Dropdown menus -->
+                    <div class="dropdown-menus">
+                        <!-- section 1 -->
+                        <div class="dropdown-menu">
+                            <details>
+                                <summary>Section 1: Intro to AI</summary>
+                                <div onclick="location.href='intro.html'" class="menu-item">Intro</div>
+                                <div onclick="location.href='1.1.html'" class="menu-item">1.1 What is AI?</div>
+                                <div onclick="location.href='1.2.html'" class="menu-item">1.2 Approaches of AI
+                                </div>
+                                <div onclick="location.href='1.3.html'" class="menu-item">1.3 The Foundations of
+                                    AI
+                                </div>
+                                <div onclick="location.href='sec1-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                        </div>
+                        <!-- section 2 -->
+                        <div class="dropdown-menu">
+                            <details open>
+                                <summary>Section 2: Intelligent Agents</summary>
+                                <div onclick="location.href='2.1.html'" class="menu-item">2.1 Agents &
+                                    Environments
+                                </div>
+                                <div onclick="location.href='2.2.html'" class="menu-item current-section">2.2 Types of Agents &
+                                    Environments</div>
+                                <div onclick="location.href='sec2-quiz.html'" class="menu-item">Quiz</div>
+                            </details>
+                            <!-- section 3 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 3: Problem Solving Using Search</summary>
+                                    <div onclick="location.href='3.1.html'" class="menu-item">3.1 Problem
+                                        solving agents
+                                    </div>
+                                    <div onclick="location.href='3.2.html'" class="menu-item">3.2 Searching for
+                                        solutions</div>
+                                    <div onclick="location.href='3.3.html'" class="menu-item">3.3 Types of
+                                        search
+                                        strategies</div>
+                                    <div onclick="location.href='sec3-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                            <!-- section 4 -->
+                            <div class="dropdown-menu">
+                                <details>
+                                    <summary>Section 4: Logic & Reasoning</summary>
+                                    <div onclick="location.href='4.1.html'" class="menu-item">4.1 What are
+                                        knowledge-based agents?</div>
+                                    <div onclick="location.href='4.2.html'" class="menu-item">4.2 Logic</div>
+                                    <div onclick="location.href='4.3.html'" class="menu-item">4.3 Propositional
+                                        logic
+                                    </div>
+                                    <div onclick="location.href='4.4.html'" class="menu-item">4.4 Inference Engine</div>
+                                    <div onclick="location.href='sec4-quiz.html'" class="menu-item"> Quiz</div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+
+                <div class="lesson-container ">
+                    <!-- Lesson content -->
+                    <div class="row2">
+                        <div class="lesson-content-box">
+                            <!-- Lesson -->
+                            <h1 class="heading-text">2.2 - Types of Agents & Environments</h1>
+                            <br>
+
+                            <p class="body-text">The first step to design agents is specifying the task environment.</p>
+                            <p class="body-text"><span>PEAS</span> -> Performance measure - Environment - Actuators - Sensors</p>
+                            <br>
+                            <h3 class="heading-text">Example: Taxi Driver</h3>
+                            <p class="body-text"><span>Performance Measure:</span> Fast <br>
+                                <span>Environment:</span> Roads <br>
+                                <span>Actuators:</span> Break <br>
+                                <span>Sensors:</span> GPS
+                            </p>
+                            <br>
+                            
+                            <p>The following graph shows the types of agents & environments</p>
+                            <img class="img-styled" src="../assets/diagram3.png" alt="agraph showing the types of agents & environments">
+                            <br><br>
+
+                            <h3 class="heading-text">Types of agents:</h3>
+
+                            <h4 class="heading-text"><span>1. Simple reflex agent</span></h4>
+                            <img class="img-styled" src="../assets/simple-reflex-agent.png" alt="A graph representing simple reflex agents">
+                            <ul class="body-text">
+                                <li>Select actions based on the current percept, ignoring the rest of the percept history.</li>
+                                <li>Simple reflex behaviors occur even in more complex environments. (connection a condition–action rule).</li>
+                                <li>Program in schematic form, showing how condition–action rules allow agent to make the connection from percept to action.
+                                    <br>( Connection a condition–action rule: The kind of connection when we go directly from current percept to an action )</li>
+                                <li><b>Drawback:</b> they can only work if decision can be made based on the current state they receive Otherwise there will be the stare of infinite loop.</li>
+                            </ul>
+
+                            <br>
+
+                            <h4 class="heading-text"><span>2. Model-based reflex agents</span></h4>
+                            <img class="img-styled" src="../assets/model-based-agent.png" alt="A graph representing model-based reflex agents">
+                            <ul class="body-text">
+                                <li>To handle partial observability, the agent must maintain some sort of internal state that depends on the percept history</li>
+                                <li>Updating internal state information over time requires two kinds of knowledge to be encoded in the agent program:</li>
+                                <ol>
+                                    <li>Information about how the world evolves independently of the agent</li>
+                                    <li>Information about how the agent’s own actions affect the world</li>
+                                </ol>
+                                <li>This knowledge about “how the world works” is called a model of the world.</li>
+                                <li>It is hardly possible for the agent to determine the current state of a partially observable environment exactly.</li>
+                            </ul>
+
+                            <br>
+
+                            <h4 class="heading-text"><span>3. Goal-based agents</span></h4>
+                            <img class="img-styled" src="../assets/goal-based-agent.png" alt="A graph representing goal-based agents">
+                            <ul class="body-text">
+                                <li>As well as current state description, agent needs some sort of goal information that describes situations that are desirable.</li>
+                                <li>As well as current state description, agent needs some sort of goal information that describes situations that are desirable.</li>
+                                <li>Goal-based action selection can be straightforward, but often, requires long sequence of searching.</li>
+                                <li>Search & planning are the subfields of AI devoted to finding action sequences that achieve the agent’s goals.</li>
+                                <li>Notice that decision making of this kind is different from the condition–action rules, as it involves consideration of the future: 
+                                    <ul>
+                                        <li>“What will happen if I do such-and-such?”</li>
+                                        <li>“Will that make me happy?”</li>
+                                    </ul>
+                                    <br>
+                                </li>
+                            </ul>
+
+                            <br>
+
+                            <h4 class="heading-text"><span>4. Model-based reflex agents</span></h4>
+                            <img class="img-styled" src="../assets/utility-based-agent.png" alt="A graph representing model-based reflex agents">
+                            <ul class="body-text">
+                                <li>Goals alone are not enough to generate high-quality behavior in most environments.</li>
+                                <li>A more general performance measure should allow a comparison of different states according to how
+                                    happy they would make the agent.</li>
+                                <li>Instead of “happy”, economists & computer scientists use utility.</li>
+                                <li>In two cases, goals are inadequate but a utility-based agent can still make rational decisions:</li>
+                                <ol>
+                                    <li>When there are conflicting goals, only some of which can be achieved</li>
+                                    <li>When there are several goals, none of which is certain to be achieved</li>
+                                </ol>
+                            </ul>
+
+                            <br>
+
+                            <h3 class="heading-text">Types of environment:</h3>
+                            <table class="table-styled">
+                                <tr>
+                                    <td>1</td>
+                                    <td class="body-text"><span>Fully Observable</span><br> If an agent sensor can sense or access the complete state of an environment at each point of time<br>Is easy as there is no need to maintain the internal state to keep track of the history of the world.</td>
+                                    <td class="body-text"><span>Partially Observable</span><br>If an agent sensor cannot sense or access the complete state of an environment at each point of time.</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>2</td>
+                                    <td class="body-text"><span>Deterministic</span><br>If an agent's current state and selected action can completely determine the next state of the environment.<br>Does not need to worry about uncertainty.</td>
+                                    <td class="body-text"><span>Stochastic</span><br> Random in nature and cannot be determined completely by an agent</td>
+                                </tr>
+
+                                <tr>
+                                    <td>3</td>
+                                    <td class="body-text"><span>Epsiodic</span><br>An agent's action is divided into atomic episodes. Decisions do not depend on previous decisions/actions.<br>The action in each episode only depends on the episode itself.</td>
+                                    <td class="body-text"><span>Sequential</span><br>An agent requires memory of past actions to determine the next best actions.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td class="body-text"><span>Static</span><br>If the environment cannot chane itself while an agent is deliberating.<br>Easy to deal because an agent does not need to continue looking at the world while deciding for an action.</td>
+                                    <td class="body-text"><span>Dynamic</span><br>If the environment can change itself while an agent is deliberating.<br>Agents need to keep looking at the world at each action.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>5</td>
+                                    <td class="body-text"><span>Discrete</span><br>If in an environment there are a limit number of percepts and actions that can be performed within it.</td>
+                                    <td class="body-text"><span>Continuous</span><br>If in an environment there are an unlimited number of percepts and actions that can be performed within it.<br>Taxi driving is a continuous-state and continuous-time problem.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>6</td>
+                                    <td class="body-text"><span>Single-Agent</span><br>If only one agent is involved in an environment, and operating by itself.</td>
+                                    <td class="body-text"><span>Multi-Agent</span><br>If multiple agents are operating in an environment.<br>Can be competitive or cooperative</td>
+                                </tr>
+                            </table>
+
+
+
+                            <br><br><br>
+                            <button class="next-lesson-button button2-style" onclick="location.href='sec2-quiz.html'">SECTION 2 QUIZ</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="footerSec">
+                            <footer>
+                    <div class="logo-bottom">
+                        <div class="footerCol1">
+                            <h3><a href="/root/pages/index.html">CS Hub</a></h3>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/index.html">home</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/about-us.html">about us</a></h3>
+                        </div>
+
+                         
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/courses.html">courses</a></h3>
+                        </div>
+
+                        <div class="footerCol2">
+                            <h3><a href="/root/pages/faq.html">FAQ</a></h3>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+    </div>
+</body>
+
+</html>
